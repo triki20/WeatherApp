@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get your weather!</p>
+        <form>
+            
+            <input type="radio" name="temperature" id="si" value="si"> Celsius
+            <input type="radio" name="temperature" id="us" value="us"> Fahrenheit
+            <br><br>
+
+            <input id="location" placeholder="Location">
+            <button>Submit</button>
+        </form>
+
+        <p id="messageOne"></p>
+        <p id="messageTwo"></p>
+
+        <div><img id="weatherIcon"></div>
+
+    </div>
+
+    {{>footer}}
+
+     <script src="/js/index.js"></script>
+</body>
+
+</html>
